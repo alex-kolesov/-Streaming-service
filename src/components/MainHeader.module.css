@@ -1,0 +1,130 @@
+.main-nav {
+  margin: 0;
+  padding: 0;
+  background-color: #4c0017;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #eaeae8;
+  font-size: 26px;
+}
+
+.main-nav h2 {
+  width: 30vw;
+  text-align: center;
+}
+
+.selected {
+  color: #e9e0cf;
+}
+
+.nav-list {
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  font-size: 24px;
+  width: 55vw;
+  justify-content: space-around;
+}
+
+.nav-list li {
+  list-style-type: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #eaeae8;
+}
+
+.btn {
+  width: 120px;
+  height: 35px;
+  background-color: #454140;
+  color: #eaeae8;
+  font-size: 22px;
+  cursor: pointer;
+  margin-top: 5px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #55514f;
+}
+
+.btn:active {
+  background-color: #77716e;
+  transform: scale(1.1);
+}
+
+.btnLi {
+  display: none;
+}
+
+@media (max-width: 950px) {
+  .nav-list {
+    display: none;
+    background-color: #eaeae8;
+    align-items: center;
+    font-size: 28px;
+  }
+  .btnLi {
+    display: block;
+  }
+  .trigger {
+    display: inline-block;
+    margin: 3px 30px 3px 3px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .trigger i {
+    display: block;
+    width: 40px;
+    height: 6px;
+    margin: 6px auto;
+    background: #eaeae8;
+  }
+  .overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 10;
+  }
+  .show {
+    z-index: 100;
+    width: 400px;
+    height: 350px;
+    background-color: eaeae8;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .hideBar {
+    display: none;
+  }
+  .nav-list a {
+    color: #454140;
+  }
+  .selected {
+    color: black;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-nav {
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+  }
+  .main-nav h2 {
+    width: 100vw;
+  }
+  .trigger {
+    margin: 2px auto 7px;
+  }
+}

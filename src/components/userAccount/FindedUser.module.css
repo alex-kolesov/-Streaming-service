@@ -1,0 +1,33 @@
+.user-table {
+  border-left: 3px solid #454140;
+  padding: 5px 0 5px 5px;
+  margin: 0 30px 30px 0;
+}
+
+.user-table button {
+  width: 85px;
+  height: 25px;
+  background-color: #454140;
+  color: #eaeae8;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 5px;
+  border: none;
+}
+
+.user-table button:first-child {
+  margin-right: 8px;
+}
+
+.buttons {
+  display: flex;
+}
+
+.user-table button:hover {
+  background-color: #55514f;
+}
+
+.user-table button:active {
+  background-color: #77716e;
+  transform: scale(1.05);
+}

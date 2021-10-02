@@ -1,0 +1,100 @@
+.account-table {
+  display: flex;
+  justify-content: center;
+}
+
+.content-table {
+  box-sizing: content-box;
+  margin: 20px 0;
+  padding: 40px;
+  width: 87vw;
+  background-color: #eaeae8;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.411);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.account-table h2,
+.account-table h3 {
+  color: #4c0017;
+  text-align: center;
+}
+
+.account-table h2 {
+  font-size: 30px;
+  width: 220px;
+}
+
+.account-table h3 {
+  font-size: 27px;
+  width: 250px;
+}
+
+.lists {
+  width: 100%;
+}
+
+.recommendations {
+  width: 100%;
+}
+
+.tables li {
+  list-style-type: none;
+  font-size: 18px;
+}
+
+.label {
+  font-size: 19px;
+  margin: 10px 0 10px;
+}
+
+.seatch-table {
+  display: flex;
+  margin: 0 0 20px;
+  height: 35px;
+  align-items: center;
+}
+
+.seatch-table p {
+  font-size: 20px;
+}
+
+.findIcon {
+  margin-left: 15px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.noRecommend {
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+.tables {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 310px);
+}
+
+@media (max-width: 650px) {
+  .content-table {
+    width: 100vw;
+    box-shadow: none;
+    background-color: white;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .content-table {
+    padding: 10px;
+  }
+  .tables {
+    grid-template-columns: repeat(auto-fill, 250px);
+  }
+}

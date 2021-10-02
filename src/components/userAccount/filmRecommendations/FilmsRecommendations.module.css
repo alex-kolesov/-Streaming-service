@@ -1,0 +1,77 @@
+.backdrop {
+  width: 100vw;
+  height: 1000vh;
+  background-color: rgba(0, 0, 0, 0.45);
+  position: fixed;
+  z-index: 10;
+  display: flex;
+}
+
+.filmsOverlay {
+  text-align: center;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 80vh;
+  position: fixed;
+  z-index: 100;
+  background-color: #eaeae8;
+  overflow-y: scroll;
+  max-height: 100%;
+}
+
+.filmsOverlay p {
+  font-size: 28px;
+  font-weight: 700;
+  color: #4c0017;
+}
+
+.recommedationTable {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 230px);
+  gap: 10px;
+  justify-content: center;
+}
+
+.recommedationTable li {
+  list-style-type: none;
+  text-align: center;
+  border: 3px solid #454140;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.616);
+  padding: 5px;
+}
+
+.backBtn {
+  margin-top: 30px;
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #b40220;
+  color: #eaeae8;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.backBtn:hover {
+  background-color: #8d0118;
+}
+
+.backBtn:active {
+  background-color: #4c0017;
+  color: #e9e0cf;
+  transform: scale(1.1);
+}
+
+@media (max-width: 950px) {
+  .filmsOverlay {
+    width: 100vw;
+  }
+  .table img {
+    width: 99.5vw;
+  }
+}

@@ -1,0 +1,87 @@
+.find-table {
+  height: 170px;
+}
+
+.find-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.backdrop {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.45);
+  position: fixed;
+  z-index: 10;
+  display: flex;
+}
+
+.filmsOverlay {
+  text-align: center;
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  position: fixed;
+  z-index: 100;
+  background-color: #eaeae8;
+  height: 215px;
+}
+
+.filmsOverlaySort {
+  height: 315px;
+}
+
+.filmsOverlay label {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.filmsOverlay select,
+.filmsOverlay input {
+  padding: 7px 5px;
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.filmsOverlay button {
+  width: 120px;
+  height: 30px;
+  font-size: 18px;
+  background-color: #454140;
+  color: #eaeae8;
+  cursor: pointer;
+  margin-top: 10px;
+  border: none;
+  margin-left: 20px;
+}
+
+.filmsOverlay button:hover {
+  background-color: #55514f;
+}
+
+.filmsOverlay button:active {
+  background-color: #77716e;
+  transform: scale(1.1);
+}
+
+@media (max-width: 450px) {
+  .filmsOverlay {
+    width: 90%;
+  }
+}
+
+@media (max-width: 330px) {
+  .filmsOverlay {
+    height: 265px;
+  }
+  .filmsOverlaySort {
+    height: 360px;
+  }
+  .filmsOverlay button {
+    margin-top: 7px;
+  }
+}

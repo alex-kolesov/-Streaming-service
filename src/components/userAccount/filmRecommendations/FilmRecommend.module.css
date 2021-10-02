@@ -1,0 +1,24 @@
+.show-table div p {
+  font-size: 20px;
+  color: black;
+}
+
+.show-table button {
+  width: 100px;
+  height: 28px;
+  background-color: #454140;
+  color: #eaeae8;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 5px;
+  border: none;
+}
+
+.show-table button:hover {
+  background-color: #55514f;
+}
+
+.show-table button:active {
+  background-color: #77716e;
+  transform: scale(1.05);
+}

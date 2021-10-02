@@ -1,0 +1,36 @@
+.table {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 450px);
+  gap: 25px;
+  justify-content: center;
+}
+
+.find-table {
+  display: flex;
+  justify-content: space-around;
+  height: 90px;
+  align-items: center;
+}
+
+.find-table h2 {
+  font-size: 32px;
+  color: #4c0017;
+}
+
+.findBtn {
+  background-color: transparent;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+}
+
+@media (max-width: 450px) {
+  .table {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .find-table h2 {
+    display: none;
+  }
+}

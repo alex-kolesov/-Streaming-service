@@ -1,0 +1,21 @@
+[debug] [2021-10-02T00:45:00.424Z] ----------------------------------------------------------------------
+[debug] [2021-10-02T00:45:00.426Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Home\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js hosting:disable
+[debug] [2021-10-02T00:45:00.426Z] CLI Version:   9.18.0
+[debug] [2021-10-02T00:45:00.426Z] Platform:      win32
+[debug] [2021-10-02T00:45:00.426Z] Node Version:  v14.17.3
+[debug] [2021-10-02T00:45:00.427Z] Time:          Sat Oct 02 2021 03:45:00 GMT+0300 (Восточная Европа, летнее время)
+[debug] [2021-10-02T00:45:00.427Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-02T00:45:00.473Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-02T00:45:00.474Z] > authorizing via signed-in user (alekseykolesov0@gmail.com)
+[debug] [2021-10-02T00:45:00.474Z] [iam] checking project streaming-service-93241 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-10-02T00:45:00.475Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/streaming-service-93241:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-10-02T00:45:01.261Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 02 Oct 2021 00:45:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=681","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-02T00:45:01.263Z] > refreshing access token with scopes: []
+[debug] [2021-10-02T00:45:01.263Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-02T00:45:01.387Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 02 Oct 2021 00:45:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-02T00:45:01.395Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/streaming-service-93241 [none]
+[debug] [2021-10-02T00:45:01.712Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/streaming-service-93241 200
+[debug] [2021-10-02T00:45:01.712Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/streaming-service-93241 {"projectId":"streaming-service-93241","projectNumber":"209617885333","displayName":"Streaming-Service","name":"projects/streaming-service-93241","resources":{"hostingSite":"streaming-service-93241","realtimeDatabaseInstance":"streaming-service-93241-default-rtdb","storageBucket":"streaming-service-93241.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
